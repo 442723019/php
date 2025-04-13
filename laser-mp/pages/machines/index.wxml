@@ -1,0 +1,49 @@
+<view class="container">
+  <!-- 设备列表 -->
+  <view class="machine-list">
+    <block wx:if="{{!loading && machines.length > 0}}">
+      <view class="machine-item" wx:for="{{machines}}" wx:key="machineCode">
+        <view class="machine-header">
+          <text class="machine-name">{{item.machineName}}</text>
+          <text class="machine-status {{item.status}}">{{item.statusText}}</text>
+        </view>
+        <view class="machine-info">
+          <view class="info-item">
+            <text class="label">设备编号：</text>
+            <text class="value">{{item.machineCode}}</text>
+          </view>
+          <view class="info-item">
+            <text class="label">当前程序：</text>
+            <text class="value">{{item.currentProgram}}</text>
+          </view>
+           <view class="info-item">
+            <text class="label">开机时间：</text>
+            <text class="value">{{item.powerOnTime}}</text>
+          </view>
+           <view class="info-item">
+            <text class="label">加工时间</text>
+            <text class="value">{{item.processTime}}</text>
+          </view>
+           <view class="info-item">
+            <text class="label">待机时间</text>
+            <text class="value">{{item.prapareTime}}</text>
+          </view>
+           <view class="info-item">
+            <text class="label">报警时间</text>
+            <text class="value">{{item.alarmTime}}</text>
+          </view>
+          <view class="info-item">
+            <text class="label">稼动率：</text>
+            <text class="value">{{item.efficiency}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="empty" wx:elif="{{!loading}}">
+      <text>暂无设备数据</text>
+    </view>
+    <view class="loading" wx:else>
+      <text>加载中...</text>
+    </view>
+  </view>
+</view> 

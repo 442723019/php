@@ -1,0 +1,15 @@
+{
+    "name": "laser/api",
+    "description": "Laser Equipment Management System API",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laser\\": "src/"
+        }
+    }
+} 

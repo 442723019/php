@@ -1,0 +1,49 @@
+.main-layout {
+  min-height: 100vh;
+
+  .logo {
+    height: 64px;
+    padding: 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1890ff;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .header {
+    background: #fff;
+    padding: 0 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .user-info {
+        color: rgba(0, 0, 0, 0.85);
+      }
+
+      a {
+        color: #1890ff;
+        cursor: pointer;
+
+        &:hover {
+          color: #40a9ff;
+        }
+      }
+    }
+  }
+
+  .content {
+    margin: 24px;
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+  }
+} 

@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="history-list">
+    <block wx:if="{{!loading && !error}}">
+      <view wx:if="{{historyList.length === 0}}" class="empty-state">
+        暂无历史记录
+      </view>
+      <view wx:else>
+        <view wx:for="{{historyList}}" wx:key="id" class="history-item">
+          <view class="history-header">
+            <text class="machine-code">{{item.machineCode}}</text>
+            <text class="status.running">
+               <text class="value">{{item.status}}</text>
+            </text>
+          </view>
+          <view class="history-content">
+            <view class="info-row">
+              <text class="label">开始时间：</text>
+              <text class="value">{{item.startTime}}</text>
+            </view>
+             <view class="info-row">
+              <text class="label">程序名称：</text>
+              <text class="value">{{item.ncPrg}}</text>
+            </view>
+             <view class="info-row">
+              <text class="label">dxf名称：</text>
+              <text class="value">{{item.dxfName}}</text>
+            </view>
+            <view class="info-row">
+              <text class="label">结束时间：</text>
+              <text class="value">{{item.endTime}}</text>
+            </view>
+            <view class="info-row">
+              <text class="label">持续时间：</text>
+              <text class="value">{{item.susTime}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view wx:if="{{loading}}" class="loading-state">
+      加载中...
+    </view>
+    <view wx:if="{{error}}" class="error-state">
+      {{error}}
+    </view>
+  </view>
+</view> 

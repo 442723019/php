@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/machines/index",
+    "pages/history/index",
+    "pages/nc/index",
+    "pages/control/index",
+    "pages/settings/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "设备管理系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1890ff",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/machines/index",
+        "text": "设备管理"
+      },
+      {
+        "pagePath": "pages/history/index",
+        "text": "状态历史"
+      },
+      {
+        "pagePath": "pages/nc/index",
+        "text": "加工历史"
+      },
+      {
+        "pagePath": "pages/control/index",
+        "text": "设备控制"
+      },
+      {
+        "pagePath": "pages/settings/index",
+        "text": "系统设置"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+} 

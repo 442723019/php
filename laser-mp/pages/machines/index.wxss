@@ -1,0 +1,175 @@
+.container {
+  padding: 20rpx;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 搜索栏样式 */
+.search-bar {
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.search-input {
+  background: #f5f5f5;
+  padding: 10rpx 20rpx;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+/* 设备列表样式 */
+.machine-list {
+  margin-bottom: 40rpx;
+}
+
+.machine-item {
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.machine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.machine-name {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.machine-status {
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+}
+
+.machine-status.running {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.machine-status.idle {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.machine-status.error {
+  background: #fff1f0;
+  color: #f5222d;
+}
+
+.machine-status.offline {
+  background: #f5f5f5;
+  color: #999;
+}
+
+.machine-info {
+  margin-bottom: 20rpx;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+
+.info-item .label {
+  color: #666;
+  width: 160rpx;
+}
+
+.info-item .value {
+  color: #333;
+  flex: 1;
+}
+
+/* 操作按钮样式 */
+.action-buttons {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 20rpx;
+}
+
+.action-btn {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+.action-btn.primary {
+  background: #1890ff;
+  color: #fff;
+}
+
+.action-btn.danger {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+.action-btn.warning {
+  background: #faad14;
+  color: #fff;
+}
+
+.action-btn.success {
+  background: #52c41a;
+  color: #fff;
+}
+
+/* 空状态和加载状态 */
+.empty, .loading {
+  text-align: center;
+  padding: 40rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 错误状态 */
+.error-state {
+  text-align: center;
+  padding: 40rpx;
+  color: #ff4d4f;
+  font-size: 28rpx;
+}
+
+/* 刷新按钮 */
+.refresh-btn {
+  position: fixed;
+  right: 30rpx;
+  bottom: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: #1890ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.refresh-btn::after {
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  border: 4rpx solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 

@@ -1,0 +1,120 @@
+.container {
+  padding: 20rpx;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 搜索表单样式 */
+.search-form {
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.search-input {
+  border: 1rpx solid #ddd;
+  border-radius: 4rpx;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.picker {
+  border: 1rpx solid #ddd;
+  border-radius: 4rpx;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.search-btn, .reset-btn {
+  margin: 10rpx 0;
+  font-size: 28rpx;
+}
+
+.search-btn {
+  background: #1890ff;
+  color: #fff;
+}
+
+.reset-btn {
+  background: #f5f5f5;
+  color: #666;
+}
+
+/* 历史记录列表样式 */
+.history-list {
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 20rpx;
+}
+
+.history-item {
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.machine-code {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.status {
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+}
+
+.status.running {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.status.idle {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.status.error {
+  background: #fff1f0;
+  color: #f5222d;
+}
+
+.history-content {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.info-row {
+  margin: 6rpx 0;
+}
+
+.label {
+  color: #999;
+}
+
+.value {
+  color: #333;
+}
+
+/* 空状态和加载状态 */
+.loading-state, .empty-state, .error-state {
+  text-align: center;
+  padding: 40rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.error-state {
+  color: #f5222d;
+} 
